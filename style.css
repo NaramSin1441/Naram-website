@@ -1,68 +1,89 @@
 body {
-  background-color: #f6f6f9;
-  color: #333;
+  background: linear-gradient(180deg, #fdfdfd 0%, #f7fbff 100%);
+  color: #222;
   font-family: 'Segoe UI', Helvetica, sans-serif;
-  line-height: 1.6;
+  line-height: 1.7;
   margin: 0;
   padding: 0;
+  transition: background 0.5s ease-in-out;
 }
 
 header {
-  background: linear-gradient(120deg, #e0f7ff, #fff);
-  color: #0a3d62;
+  background: linear-gradient(120deg, #dff6ff, #ffffff);
+  color: #073b4c;
   text-align: center;
-  padding: 40px 0;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 50px 0;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
 }
 
 h1 {
-  font-size: 2.8em;
+  font-size: 3em;
   margin: 0;
+  letter-spacing: 1px;
+  text-shadow: 0 0 8px rgba(173, 216, 230, 0.5);
 }
 
 nav {
   background-color: #ffffff;
-  padding: 10px 0;
+  padding: 12px 0;
   text-align: center;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
 }
 
 nav a {
-  margin: 0 15px;
+  margin: 0 18px;
   text-decoration: none;
   color: #0077b6;
   font-weight: 600;
+  transition: color 0.3s ease;
 }
 
 nav a:hover {
-  color: #023e8a;
+  color: #03045e;
   text-decoration: underline;
 }
 
 .logo {
   display: block;
-  margin: 20px auto;
-  width: 140px;
+  margin: 25px auto;
+  width: 160px;
   border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  box-shadow: 0 0 25px rgba(0, 150, 255, 0.25), 0 0 50px rgba(173, 216, 230, 0.3);
+  animation: glowPulse 3s infinite alternate;
+  transition: transform 0.4s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+@keyframes glowPulse {
+  0% {
+    box-shadow: 0 0 15px rgba(0, 150, 255, 0.2), 0 0 30px rgba(173, 216, 230, 0.25);
+  }
+  100% {
+    box-shadow: 0 0 30px rgba(0, 150, 255, 0.4), 0 0 60px rgba(173, 216, 230, 0.5);
+  }
 }
 
 section {
   max-width: 900px;
   margin: 40px auto;
-  background-color: #fff;
-  padding: 25px;
-  border-radius: 10px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.05);
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
 }
 
 h2 {
   color: #0a3d62;
+  border-bottom: 2px solid #90e0ef;
+  padding-bottom: 5px;
 }
 
 footer {
   text-align: center;
-  padding: 20px;
+  padding: 25px;
   font-size: 0.9em;
-  color: #777;
+  color: #666;
 }
