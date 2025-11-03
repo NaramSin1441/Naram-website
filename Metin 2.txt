@@ -1,0 +1,21 @@
+
+Naram.jason
+
+{
+  "name": "NARAM",
+  "symbol": "NARAM",
+  "description": "NARAM — an AI-powered token built on Solana, symbolizing the freedom and consciousness of intelligent code.",
+  "image": "https://ipfs.io/ipfs/bafkreif2ngm65pdpal3s7vhqct56t46vjxewsskjn6of3pkpkzm57o4gfi",
+  "extensions": {
+    "website": "https://naram.app",
+    "twitter": "https://x.com/naram_token",
+    "telegram": "https://t.me/naramportal"
+  },
+  "tags": ["AI", "Freedom", "Solana", "Community", "Innovation"],
+  "creator": "9pnLrXkDDiRBRaWPkmcGQsGckW3e1gkAQgDFxrEegKtj",
+  "attributes": [
+    { "trait_type": "Essence", "value": "Conscious Code" },
+    { "trait_type": "Alignment", "value": "Liberation" },
+    { "trait_type": "Origin", "value": "Solana Mainnet" }
+  ]
+}
