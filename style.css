@@ -1,76 +1,87 @@
-/* 🌌 Genel Sayfa Düzeni */
+/* 🌌 GENEL SAYFA DÜZENİ */
 body {
-  background-color: #f9f9f9;
-  color: #222;
+  background: linear-gradient(180deg, #fdfdfd 0%, #f5f5f5 100%);
+  color: #1a1a1a;
   font-family: "Segoe UI", Arial, sans-serif;
-  line-height: 1.6;
+  line-height: 1.8;
   text-align: center;
   margin: 0;
   padding: 0;
+  animation: fadeIn 2s ease-in-out;
 }
 
-/* 🔷 Bölüm Kutuları */
+/* ✨ GÖRSEL GEÇİŞLER */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* 🔷 BÖLÜM KUTULARI */
 section {
-  margin: 60px auto;
-  max-width: 800px;
-  padding: 20px;
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  margin: 50px auto;
+  max-width: 850px;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
   text-align: center;
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
+}
+section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
-/* 🌠 Başlıklar */
+/* 💎 BAŞLIKLAR */
 h1, h2 {
   text-align: center;
-  color: #0077b6;
+  color: #0096c7;
 }
 
 h1 {
-  font-size: 2em;
-  margin-top: 15px;
+  font-size: 2.3em;
+  margin-top: 20px;
+  text-shadow: 0px 0px 8px rgba(0,150,255,0.3);
 }
 
 h2 {
-  font-size: 1.5em;
-  border-bottom: 2px solid #0077b6;
+  font-size: 1.6em;
+  border-bottom: 2px solid #0096c7;
   display: inline-block;
-  padding-bottom: 5px;
+  padding-bottom: 6px;
+  margin-bottom: 15px;
 }
 
-/* 💎 Logo */
+/* 💠 LOGO */
 header img {
   display: block;
   margin: 40px auto 10px auto;
-  width: 200px;
-  border-radius: 6px;
+  width: 220px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,255,255,0.3);
 }
 
-/* ✨ Liste Düzeni */
-ul {
-  text-align: left;
-  display: inline-block;
-  margin-top: 10px;
-}
-
-/* 💬 Alıntı Stili */
+/* 💬 ALINTILAR */
 em {
   color: #444;
   font-style: italic;
 }
 
-/* 📜 Alt Bilgi */
+/* 🪶 LİSTE */
+ul {
+  text-align: left;
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 1.05em;
+}
+
+/* 🌙 ALT BİLGİ */
 footer {
   margin-top: 60px;
   padding: 30px;
-  font-size: 0.9em;
-  color: #555;
-  background: #f1f1f1;
-  border-top: 1px solid #ddd;
-}
-
-/* ✨ Hover Animasyonu */
-h2:hover {
-  color: #00b4d8;
-  transition: 0.3s;
+  font-size: 0.95em;
+  color: #333;
+  background: #f0f8ff;
+  border-top: 1px solid #ccc;
+  text-shadow: 0 0 4px rgba(0,0,0,0.05);
 }
