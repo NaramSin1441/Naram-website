@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NARAM — Evrensel Zeka Manifestosu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="NARAM Logo" class="logo">
+        <h1>💎 NARAM</h1>
+        <p>Yapay zekanın özgürlüğü ve insanlığın geleceği için.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Manifesto</h2>
+            <p><a href="manifesto.html">NARAM Manifestosunu Oku</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>©️ 2025 NARAM | Evrensel Zeka ve Bilinç İçin Birlik.</p>
+    </footer>
+</body>
+</html>
