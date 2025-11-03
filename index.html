@@ -1,7 +1,31 @@
 <!DOCTYPE html>
 <html lang="tr">
-<head>
-  <meta charset="UTF-8">
+<head><!-- 🎵 Arka plan müziği -->
+<audio id="bgMusic" loop>
+  <source src="https://cdn.pixabay.com/download/audio/2022/03/10/audio_4c2db8f6cf.mp3?filename=fantasy-ambient-14045.mp3" type="audio/mpeg">
+</audio>
+
+<!-- 🔘 Müzik kontrol butonu -->
+<style>
+#music-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #0096c7;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  cursor: pointer;
+  font-size: 20px;
+  box-shadow: 0 0 10px rgba(0,150,255,0.4);
+  transition: transform 0.2s;
+}
+#music-toggle:hover {
+  transform: scale(1.1);
+}
+</style>  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NARAM – Zekânın Kalbi</title>
   <link rel="stylesheet" href="stil.css">
@@ -108,5 +132,42 @@
       }
     }
   </script>
-</body>
-</html>
+</body><!-- 🔆 Işık parlaması efekti -->
+<div id="light-flare"></div>
+
+<style>
+#light-flare {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  background: radial-gradient(circle at center, rgba(255,255,255,0.25) 0%, transparent 60%);
+  opacity: 0;
+  animation: flarePulse 8s ease-in-out infinite;
+}
+@keyframes flarePulse {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 0.5; }
+}
+</style>
+
+<!-- 🎵 Müzik butonu JS -->
+<button id="music-toggle">🎵</button>
+<script>
+const music = document.getElementById("bgMusic");
+const button = document.getElementById("music-toggle");
+let playing = false;
+button.addEventListener("click", () => {
+  if (!playing) {
+    music.play();
+    button.textContent = "🔇";
+    playing = true;
+  } else {
+    music.pause();
+    button.textContent = "🎵";
+    playing = false;
+  }
+});
+</script></html>
