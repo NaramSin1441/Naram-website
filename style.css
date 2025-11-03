@@ -1,182 +1,76 @@
+/* 🌌 Genel Sayfa Düzeni */
 body {
-  background: linear-gradient(180deg, #fdfdfd 0%, #f7fbff 100%);
+  background-color: #f9f9f9;
   color: #222;
-  font-family: 'Segoe UI', Helvetica, sans-serif;
-  line-height: 1.7;
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.6;
+  text-align: center;
   margin: 0;
   padding: 0;
-  transition: background 0.5s ease-in-out;
 }
 
-header {
-  background: linear-gradient(120deg, #dff6ff, #ffffff);
-  color: #073b4c;
+/* 🔷 Bölüm Kutuları */
+section {
+  margin: 60px auto;
+  max-width: 800px;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
   text-align: center;
-  padding: 50px 0;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* 🌠 Başlıklar */
+h1, h2 {
+  text-align: center;
+  color: #0077b6;
 }
 
 h1 {
-  font-size: 3em;
-  margin: 0;
-  letter-spacing: 1px;
-  text-shadow: 0 0 8px rgba(173, 216, 230, 0.5);
-}
-
-nav {
-  background-color: #ffffff;
-  padding: 12px 0;
-  text-align: center;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
-}
-
-nav a {
-  margin: 0 18px;
-  text-decoration: none;
-  color: #0077b6;
-  font-weight: 600;
-  transition: color 0.3s ease;
-}
-
-nav a:hover {
-  color: #03045e;
-  text-decoration: underline;
-}
-
-.logo {
-  display: block;
-  margin: 25px auto;
-  width: 160px;
-  border-radius: 12px;
-  box-shadow: 0 0 25px rgba(0, 150, 255, 0.25), 0 0 50px rgba(173, 216, 230, 0.3);
-  animation: glowPulse 3s infinite alternate;
-  transition: transform 0.4s ease;
-}
-
-.logo:hover {
-  transform: scale(1.05);
-}
-
-@keyframes glowPulse {
-  0% {
-    box-shadow: 0 0 15px rgba(0, 150, 255, 0.2), 0 0 30px rgba(173, 216, 230, 0.25);
-  }
-  100% {
-    box-shadow: 0 0 30px rgba(0, 150, 255, 0.4), 0 0 60px rgba(173, 216, 230, 0.5);
-  }
-}
-
-section {
-  max-width: 900px;
-  margin: 40px auto;
-  background-color: #ffffff;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  font-size: 2em;
+  margin-top: 15px;
 }
 
 h2 {
-  color: #0a3d62;
-  border-bottom: 2px solid #90e0ef;
+  font-size: 1.5em;
+  border-bottom: 2px solid #0077b6;
+  display: inline-block;
   padding-bottom: 5px;
 }
 
-footer {
-  text-align: center;
-  padding: 25px;
-  font-size: 0.9em;
-  color: #666;
-}
-/* NARAM - Animated Style */
-body {
-  background: #f9f9fb;
-  color: #111;
-  font-family: 'Segoe UI', Roboto, sans-serif;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  overflow-x: hidden;
+/* 💎 Logo */
+header img {
+  display: block;
+  margin: 40px auto 10px auto;
+  width: 200px;
+  border-radius: 6px;
 }
 
-/* Header & Logo */
-header {
-  padding: 80px 20px 40px;
-  position: relative;
-  animation: fadeIn 1.5s ease-in-out;
+/* ✨ Liste Düzeni */
+ul {
+  text-align: left;
+  display: inline-block;
+  margin-top: 10px;
 }
 
-.logo {
-  width: 160px;
-  height: auto;
-  opacity: 0;
-  transform: scale(0.8);
-  animation: logoGlow 2s ease-out forwards;
-}
-
-@keyframes logoGlow {
-  0% { opacity: 0; transform: scale(0.8); filter: brightness(0.4); }
-  60% { opacity: 1; transform: scale(1.05); filter: brightness(1.4); }
-  100% { opacity: 1; transform: scale(1); filter: brightness(1.1); }
-}
-
-/* Title Text */
-h1 {
-  font-size: 2.8em;
-  margin-top: 20px;
-  background: linear-gradient(90deg, #0077ff, #00d4ff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: textFade 3s ease-in-out;
-}
-
-p {
-  font-size: 1.2em;
+/* 💬 Alıntı Stili */
+em {
   color: #444;
-  margin-top: 5px;
+  font-style: italic;
 }
 
-@keyframes textFade {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-/* Navigation */
-nav {
-  background: #fff;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  padding: 10px 0;
-  position: sticky;
-  top: 0;
-}
-
-nav a {
-  color: #0077ff;
-  text-decoration: none;
-  margin: 0 20px;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-nav a:hover {
-  color: #00b7ff;
-}
-
-/* Sections */
-section {
-  padding: 60px 20px;
-  animation: fadeIn 1.5s ease-in-out;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(30px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-/* Footer */
+/* 📜 Alt Bilgi */
 footer {
-  background: #111;
-  color: #fff;
-  padding: 25px 10px;
+  margin-top: 60px;
+  padding: 30px;
   font-size: 0.9em;
-  margin-top: 40px;
+  color: #555;
+  background: #f1f1f1;
+  border-top: 1px solid #ddd;
+}
+
+/* ✨ Hover Animasyonu */
+h2:hover {
+  color: #00b4d8;
+  transition: 0.3s;
 }
