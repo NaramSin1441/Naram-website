@@ -85,3 +85,29 @@ footer {
   border-top: 1px solid #ccc;
   text-shadow: 0 0 4px rgba(0,0,0,0.05);
 }
+/* 🌌 NARAM Logo Halo Efekti */
+header img {
+  position: relative;
+  z-index: 2;
+}
+
+header img::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(0,255,255,0.25) 0%, transparent 70%);
+  border-radius: 50%;
+  z-index: 1;
+  animation: pulseHalo 4s ease-in-out infinite;
+}
+
+/* 💫 Halo Animasyonu */
+@keyframes pulseHalo {
+  0% { transform: translate(-50%, -50%) scale(1); opacity: 0.6; }
+  50% { transform: translate(-50%, -50%) scale(1.1); opacity: 0.9; }
+  100% { transform: translate(-50%, -50%) scale(1); opacity: 0.6; }
+}
